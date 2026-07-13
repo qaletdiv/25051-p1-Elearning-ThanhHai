@@ -155,6 +155,10 @@ body{
     position: relative;
 }
 
+.password input{
+    width: 100%;
+}
+
 .password span{
     position: absolute;
     top: 50%;
@@ -163,6 +167,11 @@ body{
     font-weight: bold;
     cursor: pointer;
     transform:translateY(-50%);
+    user-select: none;
+}
+
+.password span:hover{
+    color:#5b35ff;
 }
 
 .signup{
