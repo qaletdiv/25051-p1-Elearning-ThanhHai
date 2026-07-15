@@ -1,11 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Now Learning</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="top-navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="Now Learning Logo" />
+          </a>
+        </div>
+
+        <!-- Thanh tìm kiếm -->
+        <div class="search-area">
+          <input
+            type="search"
+            id="course-search"
+            class="search-input"
+            placeholder="Tìm khóa học, bài tập, hỏi đáp..."
+          />
+        </div>
+
+        <!-- Tài khoản -->
+        <div class="user-actions">
+          <a href="login.html" class="login-btn"> Đăng nhập </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Nội dung chính -->
+    <div class="page-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 🏠 Trang chủ </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 📚 Khóa học </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 📝 Bài tập </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> ❓ Hỏi đáp </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 👤 Hồ sơ </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Nội dung -->
+      <main class="main-content">
+        <h1>Now Learning</h1>
+        <p>Nội dung trang web hiển thị tại đây.</p>
+      </main>
+    </div>
+  </body>
 </html>
