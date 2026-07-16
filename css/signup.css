@@ -63,10 +63,14 @@ body{
     line-height: 1.5;
 }
 
-.login-box button{
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 180px;
     height: 60px;
     border: none;
+    text-decoration: none;
     border-radius: 10px;
     background-color: #fff;
     font-size: 18px;
@@ -75,7 +79,7 @@ body{
     transition: .3s;
 }
 
-.login-box button:hover{
+.button:hover{
     transform: scale(1.05);
 }
 
