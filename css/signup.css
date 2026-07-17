@@ -177,6 +177,16 @@ body{
     color:#5b35ff;
 }
 
+.forgotPass{
+    display: inline;
+    width: auto;
+    text-decoration: none;
+}
+
+.forgotPass:hover{
+    text-decoration: underline;
+}
+
 .signup{
     margin-top:10px;
     margin-bottom: 40px;
