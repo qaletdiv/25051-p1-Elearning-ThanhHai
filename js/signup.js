@@ -39,8 +39,25 @@ confirmPassword.addEventListener("input", checkPassword);
 const form = document.querySelector(".form");
 
 form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = form.querySelector('input[type="text"]').value.trim();
+  const email = form.querySelector('input[type="email"]').value.trim();
+
   if (password.value !== confirmPassword.value) {
-    e.preventDefault();
     alert("Mật khẩu không khớp!");
+    return;
   }
+
+  const user = {
+    name,
+    email,
+    password: password.value,
+  };
+
+  localStorage.setItem("user", JSON.stringify(user));
+
+  alert("Đăng ký thành công!");
+
+  window.location.href = "login.html";
 });
