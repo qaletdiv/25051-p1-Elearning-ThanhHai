@@ -1,3 +1,7 @@
+if (localStorage.getItem("isLogin") === "true") {
+    window.location.href = "index.html";
+}
+
 const toggles = document.querySelectorAll(".togglePassword");
 
 toggles.forEach((toggle) => {
@@ -55,7 +59,22 @@ form.addEventListener("submit", (e) => {
     password: password.value,
   };
 
-  localStorage.setItem("user", JSON.stringify(user));
+  // Lấy danh sách người dùng
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+
+  // Kiểm tra email đã tồn tại chưa
+  const exist = users.find((u) => u.email === email);
+
+  if (exist) {
+    alert("Email đã được đăng ký!");
+    return;
+  }
+
+  // Thêm người dùng mới
+  users.push(user);
+
+  // Lưu lại
+  localStorage.setItem("users", JSON.stringify(users));
 
   alert("Đăng ký thành công!");
 

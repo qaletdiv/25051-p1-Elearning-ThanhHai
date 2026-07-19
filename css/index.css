@@ -100,6 +100,9 @@ body {
   background: #372fc7;
 }
 
+.logout-btn{
+  display: none;
+}
 /* ===========================
    LAYOUT
 =========================== */
