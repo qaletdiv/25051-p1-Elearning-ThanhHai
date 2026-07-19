@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Now Learning</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/courses.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="top-navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="Now Learning Logo" />
+          </a>
+        </div>
+
+        <!-- Thanh tìm kiếm -->
+        <div class="search-area">
+          <input
+            type="search"
+            id="course-search"
+            class="search-input"
+            placeholder="Tìm khóa học, bài tập, hỏi đáp..."
+          />
+        </div>
+
+        <!-- Tài khoản -->
+        <div class="user-actions">
+          <a href="login.html" class="login-btn">Log in</a>
+          <a href="signup.html" class="signup-btn">Sign up</a>
+          <a href="#" class="logout-btn">Log out</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Nội dung chính -->
+    <div class="page-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 🏠 Home </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 📚 Course </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 📝 Practice </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> ❓ Questions</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link"> 👤 Profile </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Nội dung -->
+      <main class="main-content">
+        <div class="page-title">
+          <h1>All Courses</h1>
+          <p>Explore courses and start learning today.</p>
+        </div>
+
+        <!-- Bộ lọc -->
+        <section class="course-filter">
+          <input
+            type="text"
+            placeholder="Search course..."
+            class="filter-search"
+          />
+
+          <select class="filter-select">
+            <option>All Categories</option>
+            <option>Technology</option>
+            <option>Language</option>
+            <option>Business</option>
+          </select>
+
+          <select class="filter-select">
+            <option>All Levels</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+
+          <button class="filter-btn">Apply</button>
+        </section>
+
+        <!-- Danh sách khóa học -->
+
+        <section class="course-grid">
+          <article class="course-card">
+            <img src="assets/banner.jpg" alt="Course" />
+
+            <div class="course-info">
+              <h3>HTML & CSS Master</h3>
+
+              <p class="course-category">Technology</p>
+
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+
+              <span class="progress-text"> 40% Completed </span>
+
+              <button class="detail-btn">View Detail</button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

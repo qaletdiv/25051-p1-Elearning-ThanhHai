@@ -1,0 +1,160 @@
+.page-title{
+    margin-bottom:30px;
+}
+
+.page-title h1{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+.page-title p{
+
+    color:#777;
+
+}
+
+.course-filter{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.filter-search{
+
+    flex:1;
+
+    min-width:250px;
+
+    padding:12px 15px;
+
+    border-radius:8px;
+
+    border:1px solid #ddd;
+
+}
+
+.filter-select{
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ddd;
+
+}
+
+.filter-btn{
+
+    background:#0056d2;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.course-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.course-card img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+}
+
+.course-info{
+
+    padding:18px;
+
+}
+
+.progress-bar{
+
+    background:#eee;
+
+    height:8px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:15px 0;
+
+}
+
+.progress-fill{
+
+    width:40%;
+
+    height:100%;
+
+    background:#0d6efd;
+
+}
+
+.detail-btn{
+
+    width:100%;
+
+    margin-top:18px;
+
+    padding:10px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
