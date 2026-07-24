@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Now Learning</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/courses-detail.css">
+    <link rel="stylesheet" href="css/courses-detail.css" />
   </head>
   <body>
     <!-- Header -->
@@ -68,97 +68,63 @@
 
       <!-- Nội dung -->
       <main class="main-content">
+        <!-- Tiêu đề -->
         <section class="course-header">
-          <div class="course-information">
-            <h1>HTML & CSS Master</h1>
-
-            <p class="course-meta">
-              ⭐⭐⭐⭐⭐ Beginner • Technology • 20 Hours
-            </p>
-          </div>
+          <h1 id="courseTitle"></h1>
+          <p class="course-meta">
+            <span id="courseCategory"></span> • <span id="courseLevel"></span> •
+            <span id="courseDuration"></span>
+          </p>
         </section>
 
+        <!-- Thông tin -->
         <section class="course-overview">
           <div class="course-image">
-            <img src="assets/banner.jpg" alt="Course" />
+            <img id="courseImage" src="" alt="Course Image" />
           </div>
 
           <div class="course-summary">
-            <h2>Free</h2>
+            <h2 id="coursePrice"></h2>
 
-            <p>Learn HTML and CSS from basic to advanced.</p>
+            <p id="courseDescription"></p>
 
             <div class="teacher">
               <strong>Instructor</strong>
-
-              <p>John Smith</p>
+              <p id="courseInstructor"></p>
             </div>
 
-            <button class="join-btn">Join Now</button>
+            <button class="join-btn" id="actionBtn">Join Now</button>
           </div>
         </section>
 
-        <section class="course-description">
-          <h2>Description</h2>
-
-          <p>This course teaches HTML and CSS through practical projects.</p>
-        </section>
-
+        <!-- Danh sách -->
         <section class="lesson-section">
           <h2>Course Content</h2>
 
-          <ul>
-            <li>
-              HTML Introduction
-
-              <span>10 min</span>
-            </li>
-
-            <li>
-              HTML Tags
-
-              <span>20 min</span>
-            </li>
-
-            <li>
-              CSS Selector
-
-              <span>18 min</span>
-            </li>
-
-            <li>
-              Flexbox
-
-              <span>25 min</span>
-            </li>
-          </ul>
+          <ul id="lessonList"></ul>
         </section>
 
+        <!-- Đánh giá -->
         <section class="review-section">
           <h2>Student Reviews</h2>
 
-          <div class="review">
-            ⭐⭐⭐⭐⭐
-
-            <p>Great course for beginners.</p>
-          </div>
-
-          <div class="review">
-            ⭐⭐⭐⭐☆
-
-            <p>Easy to understand.</p>
-          </div>
+          <div id="reviewList"></div>
         </section>
 
+        <!-- Comment -->
         <section class="write-review">
           <h2>Write Review</h2>
 
-          <textarea placeholder="Write your review..."></textarea>
+          <textarea
+            id="reviewText"
+            placeholder="Write your review..."
+          ></textarea>
 
-          <button>Submit</button>
+          <button id="submitReview">Submit</button>
         </section>
       </main>
     </div>
-    <script src="js/courses.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/courses-detail.js"></script>
   </body>
 </html>
