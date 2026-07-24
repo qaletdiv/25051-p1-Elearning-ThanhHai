@@ -1,167 +1,135 @@
-.course-header{
-
-    margin-bottom:30px;
-
+.course-header {
+  margin-bottom: 30px;
 }
 
-.course-header h1{
+.course-header h1 {
+  font-size: 34px;
 
-    font-size:34px;
-
-    margin-bottom:10px;
-
+  margin-bottom: 10px;
 }
 
-.course-meta{
-
-    color:#777;
-
+.course-meta {
+  color: #777;
 }
 
-.course-overview{
+.course-overview {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: 2fr 1fr;
 
-    grid-template-columns:2fr 1fr;
+  gap: 30px;
 
-    gap:30px;
-
-    margin-bottom:40px;
-
+  margin-bottom: 40px;
 }
 
-.course-image img{
+.course-image img {
+  width: 100%;
 
-    width:100%;
-
-    border-radius:15px;
-
+  border-radius: 15px;
 }
 
-.course-summary{
+.course-summary {
+  background: white;
 
-    background:white;
+  padding: 25px;
 
-    padding:25px;
+  border-radius: 15px;
 
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.join-btn{
+.join-btn {
+  width: 100%;
 
-    width:100%;
+  padding: 14px;
 
-    padding:14px;
+  background: #0056d2;
 
-    background:#0056d2;
+  color: white;
 
-    color:white;
+  border: none;
 
-    border:none;
+  border-radius: 10px;
 
-    border-radius:10px;
+  cursor: pointer;
 
-    cursor:pointer;
-
-    margin-top:20px;
-
+  margin-top: 20px;
 }
 
-.course-description{
-
-    margin:40px 0;
-
+.course-description {
+  margin: 40px 0;
 }
 
-.lesson-section{
+.lesson-section {
+  background: white;
 
-    background:white;
+  padding: 25px;
 
-    padding:25px;
+  border-radius: 15px;
 
-    border-radius:15px;
-
-    margin-bottom:35px;
-
+  margin-bottom: 35px;
 }
 
-.lesson-section ul{
-
-    list-style:none;
-
+.lesson-section ul {
+  list-style: none;
 }
 
-.lesson-section li{
+.lesson-section li {
+  display: flex;
 
-    display:flex;
+  justify-content: space-between;
 
-    justify-content:space-between;
+  padding: 15px 0;
 
-    padding:15px 0;
-
-    border-bottom:1px solid #eee;
-
+  border-bottom: 1px solid #eee;
 }
 
-.review-section{
+.review-section {
+  background: white;
 
-    background:white;
+  padding: 25px;
 
-    padding:25px;
+  border-radius: 15px;
 
-    border-radius:15px;
-
-    margin-bottom:30px;
-
+  margin-bottom: 30px;
 }
 
-.review{
+.review {
+  border-bottom: 1px solid #eee;
 
-    border-bottom:1px solid #eee;
-
-    padding:15px 0;
-
+  padding: 15px 0;
 }
 
-.write-review{
+.write-review {
+  background: white;
 
-    background:white;
+  padding: 25px;
 
-    padding:25px;
-
-    border-radius:15px;
-
+  border-radius: 15px;
 }
 
-.write-review textarea{
+.write-review textarea {
+  width: 100%;
 
-    width:100%;
+  height: 130px;
 
-    height:130px;
+  padding: 15px;
 
-    padding:15px;
+  margin: 20px 0;
 
-    margin:20px 0;
-
-    resize:none;
-
+  resize: none;
 }
 
-.write-review button{
+.write-review button {
+  padding: 12px 25px;
 
-    padding:12px 25px;
+  background: #0056d2;
 
-    background:#0056d2;
+  color: white;
 
-    color:white;
+  border: none;
 
-    border:none;
+  border-radius: 8px;
 
-    border-radius:8px;
-
-    cursor:pointer;
-
+  cursor: pointer;
 }
